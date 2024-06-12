@@ -1,4 +1,4 @@
-import { JsonDB } from 'jayson-database'
+import { JsonDB } from 'jayson.database'
 
 const db = new JsonDB({
     path: 'test.json'

@@ -13,6 +13,8 @@ export class JsonDB {
         options.path ??= 'db.json'
         this.options = options
         this.data = {}
+
+        this.init()
     }
 
     async init() {

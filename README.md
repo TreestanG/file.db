@@ -7,6 +7,3 @@ file.db is an open-sourced package meant to provide an easy way for beginners to
 ```
 npm i file.db
 ```
-
-
-

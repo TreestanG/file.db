@@ -1,7 +1,7 @@
 # jayson.database
 a simple and small json-based database wrapper
 
-j(ay)son.database is an open-sourced package meant to provide an easy way for beginners to get integrated into using databases. it utilizes json files to store data making data easily viewable for all users. 
+j(ay)son.database is an lighweight open-sourced package meant to provide an easy way for beginners to get integrated into using databases. it utilizes json files to store data making data easily viewable for all users. 
 
 ## installation
 ```

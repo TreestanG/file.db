@@ -10,7 +10,7 @@
   "devDependencies": {
     "@types/lodash-es": "^4.17.12"
   },
-  "name": "file-database",
+  "name": "jayson.database",
   "version": "1.0.0",
   "description": "a simple json-based database wrapper",
   "main": "index.ts",

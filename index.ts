@@ -1,5 +1,5 @@
 import fs from 'node:fs'
-import { get as _get, set as _set } from 'lodash-es'
+import { get as _get, set as _set, unset as _unset } from 'lodash-es'
 
 export interface DBOptions {
     path?: string;
@@ -7,17 +7,17 @@ export interface DBOptions {
 
 export class JsonDB {
     private options: DBOptions
-    data: { [key: string]: any }
+    private data: { [key: string]: any }
 
     constructor(options: DBOptions = {}) {
-        options.path ??= 'db.json'
+        options.path ??= 'database.json'
         this.options = options
         this.data = {}
 
         this.init()
     }
 
-    async init() {
+    private async init() {
         if (!fs.existsSync(this.options.path!)) {
             fs.writeFileSync(this.options.path!, '{}')
         }
@@ -51,7 +51,7 @@ export class JsonDB {
     }
 
     async delete(key: string) {
-        delete this.data[key]
+        _unset(this.data, key)
         this.save()
     }
 

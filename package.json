@@ -1,26 +1,27 @@
 {
-  "dependencies": {
-    "@types/node": "^20.14.2",
-    "lodash-es": "^4.17.21",
-    "typescript": "^5.4.5"
-  },
-  "scripts": {
-    "dev": "bun tsc && bun dist/test.js"
-  },
-  "devDependencies": {
-    "@types/lodash-es": "^4.17.12"
-  },
   "name": "jayson.database",
   "version": "1.0.0",
-  "description": "a simple json-based database wrapper",
+  "description": "a lightweight database as a json wrapper",
   "main": "index.ts",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21",
+    "typescript": "^5.4.5",
+    "undici-types": "^5.26.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TreestanG/json.db.git"
   },
   "keywords": [
-    "database",
     "json",
+    "database",
     "db"
   ],
   "author": "",
